@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 
 import 'screens/home_page.dart';
 import 'screens/page_1.dart';
@@ -8,6 +9,8 @@ import 'screens/page_3.dart';
 import 'screens/page_4.dart';
 
 void main() {
+  /// Remove the "#" from web paths
+  usePathUrlStrategy();
   runApp(const MyApp());
 }
 
